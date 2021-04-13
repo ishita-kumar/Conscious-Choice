@@ -1,0 +1,168 @@
+anaconda-client==1.7.2
+anaconda-navigator==1.9.7
+appdirs==1.4.3
+argcomplete==1.10.0
+argon2-cffi @ file:///C:/ci/argon2-cffi_1596828549974/work
+astroid @ file:///C:/ci/astroid_1592481955828/work
+attrs @ file:///tmp/build/80754af9/attrs_1598374659300/work
+autopep8==1.4.4
+backcall==0.2.0
+backports.functools-lru-cache==1.6.1
+backports.tempfile==1.0
+backports.weakref==1.0.post1
+beautifulsoup4==4.8.0
+black==19.10b0
+bleach==3.1.5
+blis==0.7.4
+brotlipy==0.7.0
+catalogue==1.0.0
+certifi==2020.6.20
+cffi @ file:///C:/ci/cffi_1598352799320/work
+chardet==3.0.4
+click==7.1.2
+clyent==1.2.2
+colorama==0.4.3
+conda==4.9.1
+conda-build==3.18.8
+conda-package-handling==1.7.0
+conda-verify==3.4.2
+cryptography @ file:///C:/ci/cryptography_1598873979408/work
+cycler==0.10.0
+cymem==2.0.5
+Cython==0.29.14
+decorator==4.4.2
+defusedxml==0.6.0
+docx2txt==0.8
+EbookLib==0.17.1
+en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
+entrypoints==0.3
+extract-msg==0.23.1
+filelock==3.0.12
+findspark==1.4.2
+Flask==1.1.2
+Flask-Cors==3.0.10
+fsspec==0.8.7
+funcy==1.15
+future==0.18.2
+gensim==3.8.3
+glob2==0.7
+idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+IMAPClient==2.1.0
+importlib-metadata @ file:///C:/ci/importlib-metadata_1593446525189/work
+ipykernel==5.4.3
+ipython @ file:///C:/ci/ipython_1598883894321/work
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+isort @ file:///C:/ci/isort_1597597762781/work
+itsdangerous==1.1.0
+jedi @ file:///C:/ci/jedi_1596472767194/work
+Jinja2==2.11.2
+joblib==1.0.0
+json5==0.9.5
+jsonschema @ file:///C:/ci/jsonschema_1594363671836/work
+jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1594826976318/work
+jupyter-core==4.6.3
+jupyterlab==2.2.6
+jupyterlab-server @ file:///tmp/build/80754af9/jupyterlab_server_1594164409481/work
+kiwisolver==1.3.1
+lazy-object-proxy==1.4.3
+libarchive-c==2.9
+lxml==4.6.2
+MarkupSafe @ file:///C:/ci/markupsafe_1594405949945/work
+matplotlib==3.3.4
+mccabe==0.6.1
+menuinst==1.4.16
+mistune @ file:///C:/ci/mistune_1594373272338/work
+mkl-fft==1.1.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+msedge-selenium-tools==3.141.3
+murmurhash==1.0.5
+mysql-connector-python==8.0.17
+navigator-updater==0.2.1
+nbconvert @ file:///C:/ci/nbconvert_1594372737468/work
+nbformat==5.0.7
+nltk==3.5
+notebook @ file:///C:/ci/notebook_1596837179121/work
+numexpr==2.7.2
+numpy @ file:///C:/ci/numpy_and_numpy_base_1596233945180/work
+olefile==0.46
+opencv-python==4.1.2.30
+packaging==20.4
+pandas @ file:///C:/ci/pandas_1598371525254/work
+pandocfilters==1.4.2
+parso==0.7.0
+pathspec==0.6.0
+pdfminer.six==20200517
+pdfplumber==0.5.25
+pickleshare @ file:///C:/ci/pickleshare_1594374056827/work
+Pillow @ file:///C:/ci/pillow_1594298234712/work
+pkginfo==1.5.0.1
+plac==1.1.3
+preshed==3.0.5
+prometheus-client==0.8.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1598885458782/work
+psutil @ file:///C:/ci/psutil_1598352273540/work
+py4j==0.10.7
+pycodestyle==2.6.0
+pycosat==0.6.3
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+pycryptodome==3.9.9
+Pygments==2.6.1
+pyLDAvis==3.1.0
+pylint @ file:///C:/ci/pylint_1598605958085/work
+pymongo==3.9.0
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
+pyparsing==2.4.7
+pyrsistent==0.16.0
+PySocks @ file:///C:/ci/pysocks_1594394709107/work
+pyspark==3.0.1
+python-dateutil==2.8.1
+python-pptx==0.6.18
+pytz==2020.1
+pywin32==227
+pywinpty==0.5.7
+PyYAML==5.3.1
+pyzmq==19.0.1
+QtPy==1.9.0
+regex==2019.11.1
+requests @ file:///tmp/build/80754af9/requests_1592841827918/work
+ruamel-yaml==0.15.87
+scikit-learn==0.24.1
+scipy==1.6.0
+selenium==3.141.0
+Send2Trash==1.5.0
+six==1.12.0
+sklearn==0.0
+smart-open==4.1.2
+sortedcontainers==2.3.0
+soupsieve==2.0.1
+spacy==2.3.5
+SpeechRecognition==3.8.1
+srsly==1.0.5
+terminado==0.8.3
+testpath==0.4.4
+thinc==7.4.5
+threadpoolctl==2.1.0
+toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+tornado==6.0.4
+tqdm @ file:///tmp/build/80754af9/tqdm_1596810128862/work
+traitlets==4.3.3
+typed-ast==1.4.1
+tzlocal==1.5.1
+urllib3 @ file:///tmp/build/80754af9/urllib3_1597086586889/work
+Wand==0.6.5
+warcio==1.7.4
+wasabi==0.8.0
+wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
+webencodings==0.5.1
+Werkzeug==1.0.1
+widgetsnbextension==3.5.1
+win-inet-pton==1.1.0
+wincertstore==0.2
+wordcloud==1.6.0
+wrapt==1.11.2
+xlrd==1.2.0
+XlsxWriter==1.3.7
+zipp==3.1.0

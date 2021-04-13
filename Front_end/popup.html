@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html style="min-width: 400px;">
+
+<head>
+  <title>Amazon Ratings</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <script src="popup.js"></script>
+
+</head>
+
+<body>
+
+  <div class="card border-0 shadow-none">
+
+    <div class="card-header bg-white p-0 shadow-sm">
+      <div class="vertical_logo d-flex justify-content-center align-items-center">
+        <img class="close-img" src="icon.png">
+      </div>
+    </div>
+
+    <div class="card-body">
+      <div class="text-center">
+        <span id="title" class="h6 font-weight-bold">N/A</span>
+      </div>
+      <div class="text-center">
+        <button id="rating" class="btn btn-success btn-sm mt-3 px-3">Get Rating</button>
+      </div>
+      <div class="w-100 text-center d-none" id="loading">
+        <img src="loading.svg" class="w-25 text-center" />
+        <div>
+          <small>Loading...</small>
+        </div>
+      </div>
+ 
+      <div class="results" id="results-div">
+        <hr class="text-secondary">
+        <div class="info">
+          <div class="prod_cat">
+            Total Rating
+          </div>
+          <div class="total-rating-graph">
+            <div id="total-rating"></div>
+          </div>
+        </div>
+
+        <hr class="text-secondary">
+
+        <div class="prod_cat pb-3">
+          Categorical Rating
+        </div>
+
+        <div class="total_rate">
+          <div class="rating_name"><img src="priest.png"><span class="pl-2">People</span></div>
+          <div class="rating_graph" id="rating-people"></div>
+        </div>
+
+        <div class="total_rate">
+          <div class="rating_name"><img src="earth.png"><span class="pl-2">Planet</span></div>
+          <div class="rating_graph" id="rating-planet"></div>
+        </div>
+        <div class="total_rate">
+          <div class="rating_name"><img src="dog.png"><span class="pl-2">Animals</span></div>
+          <div class="rating_graph" id="rating-animal"></div>
+        </div>
+      </div>
+
+      <div id="error" class="d-none">
+        <span class="h6 m-0 text-warning">Error! Looks like something went wrong :(</span>
+      </div>
+
+    </div>
+    <div class="card-footer bg-white d-flex align-items-center justify-content-center w-100 p-0 py-2">
+      <a class="text-info" href="#"><small>Read More</small></a>
+    </div>
+  </div>
+
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
