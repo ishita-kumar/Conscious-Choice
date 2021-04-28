@@ -8,7 +8,9 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
   <script src="popup.js"></script>
 
 </head>
@@ -16,67 +18,155 @@
 <body>
 
   <div class="card border-0 shadow-none">
-
     <div class="card-header bg-white p-0 shadow-sm">
       <div class="vertical_logo d-flex justify-content-center align-items-center">
-        <img class="close-img" src="icon.png">
+        <img class="close-img" style="width: 50%;" src="images/cc.png">
       </div>
     </div>
-
-    <div class="card-body">
-      <div class="text-center">
-        <span id="title" class="h6 font-weight-bold">N/A</span>
-      </div>
-      <div class="text-center">
-        <button id="rating" class="btn btn-success btn-sm mt-3 px-3">Get Rating</button>
-      </div>
-      <div class="w-100 text-center d-none" id="loading">
-        <img src="loading.svg" class="w-25 text-center" />
-        <div>
-          <small>Loading...</small>
+    <div class="card-body" style="overflow: auto;">
+      <div id="showhome">
+        <div class="text-center">
+          <span id="title" class="h6 font-weight-bold">N/A</span>
         </div>
-      </div>
- 
-      <div class="results" id="results-div">
-        <hr class="text-secondary">
-        <div class="info">
-          <div class="prod_cat">
-            Total Rating
-          </div>
-          <div class="total-rating-graph">
-            <div id="total-rating"></div>
+        <div class="text-center">
+          <button id="rating" class="btn btn-success btn-sm mt-3 px-3 colorgreen">Get Rating</button>
+        </div>
+        <div class="w-100 text-center d-none" id="loading">
+          <img src="loading.svg" class="w-25 text-center" />
+          <div>
+            <small>Loading...</small>
           </div>
         </div>
 
+        <div class="results" id="results-div">
+          <hr class="text-secondary">
+          <div class="info">
+            <div class="prod_cat">
+              Total Rating
+            </div>
+            <div class="total-rating-graph">
+              <div id="total-rating"></div>
+            </div>
+          </div>
+
+          <hr class="text-secondary">
+
+          <div class="prod_cat pb-3">
+            Categorical Rating
+          </div>
+
+          <div class="total_rate">
+            <div class="rating_name"><img src="priest.png"><span class="pl-2">People</span></div>
+            <div class="rating_graph" id="rating-people"></div>
+          </div>
+
+          <div class="total_rate">
+            <div class="rating_name"><img src="earth.png"><span class="pl-2">Planet</span></div>
+            <div class="rating_graph" id="rating-planet"></div>
+          </div>
+          <div class="total_rate">
+            <div class="rating_name"><img src="dog.png"><span class="pl-2">Animals</span></div>
+            <div class="rating_graph" id="rating-animal"></div>
+          </div>
+        </div>
+
+        <div id="error" class="d-none">
+          <span class="h6 m-0 text-warning">Error! Looks like something went wrong :(</span>
+        </div>
+
+      </div>
+
+      <div id="showabout" class="tabcontent d-none" style="padding: 0.8rem; ">
+        <div class="text-center">
+          <span class="h5 font-weight-bold">Welcome to Conscious Choice! </span>
+        </div>
         <hr class="text-secondary">
+        <div class="text-center">
+          <span class=" about-content">This Extension gives you the ability to make smart and Conscious choices about
+            the products that you buy on Amazon</span>
+          <hr class="text-secondary">
 
-        <div class="prod_cat pb-3">
-          Categorical Rating
+          <div>
+            <span class="h5 m-0">The Rating System</span>
+          </div>
         </div>
+        <div class="">
 
-        <div class="total_rate">
-          <div class="rating_name"><img src="priest.png"><span class="pl-2">People</span></div>
-          <div class="rating_graph" id="rating-people"></div>
-        </div>
+          <div class="about-content">
+            <div class="row pt-4">
+              <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                <img src="star.png">
+              </div>
+              <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                <div class="font-weight-bold">Total Rating</div>
+                <div class="about-content ">
+                  <span>The total rating is calculated on the basis of the emphasis on how good this product is for People, the Planet, and Animals. 
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-4">
+              <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                <img src="priest.png">
+              </div>
+              <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                <div class="font-weight-bold">People</div>
+                <div class="about-content ">
+                  <span>The brands emphasis on Policies related to Child labor,gender equality,worker safety,freedom of
+                    association and Payment of living wage.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-4">
+              <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                <img src="earth.png">
+              </div>
+              <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                <div class="font-weight-bold">Planet</div>
+                <div class="about-content ">
+                  <span>The brand's resources and waste management policies. Its emphasis on carbon emissions, chemical product usage and disposal.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-4">
+              <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                <img src="dog.png">
+              </div>
+              <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                <div class="font-weight-bold">Planet</div>
+                <div class="about-content ">
+                  <span>We track the the brand's Animal Welfare policies and their animal welfare policies! 
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            
 
-        <div class="total_rate">
-          <div class="rating_name"><img src="earth.png"><span class="pl-2">Planet</span></div>
-          <div class="rating_graph" id="rating-planet"></div>
-        </div>
-        <div class="total_rate">
-          <div class="rating_name"><img src="dog.png"><span class="pl-2">Animals</span></div>
-          <div class="rating_graph" id="rating-animal"></div>
+          </div>
+
+          <hr class="text-secondary">
+          <div class="text-center">
+            <span class="about-content">You'll know if you're on an acceptable amazon website if the <img src="icon.png"
+                style="width:10%;"> is green!</span>
+            
+          </div>
+          <div class="text-center">
+    
+                <span class="about-content">For more information on the project,please visit -</span>          </div>
         </div>
       </div>
 
-      <div id="error" class="d-none">
-        <span class="h6 m-0 text-warning">Error! Looks like something went wrong :(</span>
-      </div>
 
     </div>
-    <div class="card-footer bg-white d-flex align-items-center justify-content-center w-100 p-0 py-2">
-      <a class="text-info" href="#"><small>Read More</small></a>
+    <div class="card-footer bg-white d-flex justify-content-center w-100 p-0 ">
+      <button class="tablink selected" id="defaultOpen"><i class="fa fa-home" aria-hidden="true"></i> </button>
+      <button class="tablink" id="about"> <img src="icon.png" style="width:20%;"></button>
     </div>
+  </div>
+
   </div>
 
   <script src="./node_modules/axios/dist/axios.min.js"></script>

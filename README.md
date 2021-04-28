@@ -58,7 +58,10 @@ $ npm install
 You might have to install dependecies (Flask, Selenium, pandas, numpy). Install it with my requriements.txt in Back_end
 
 ``` 
-cd Back_End/
+cd Back_End/mainapi
+pip install -r requirements.txt
+cd ..
+cd scraperapi
 pip install -r requirements.txt
 ```
 
@@ -66,12 +69,12 @@ For running the  Back End of the chrome extension, when you are in the root fold
 
 
 ``` 
-cd Back_End/ && python api.py 
+cd Back_End/mainapi && python api.py 
 ```
 Go on a new terminal and paste the following: 
 
 ``` 
-cd Back_End/ && python scrapreapi.py
+cd Back_End/scraperapi && python scrapreapi.py
 ```
 ### Testing on Amazon products 
 

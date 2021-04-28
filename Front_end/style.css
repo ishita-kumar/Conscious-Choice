@@ -106,6 +106,9 @@ button:focus {
   justify-content: space-between;
   font-size: 20px;
 }
+.about-content{
+font-size: x-small;
+}
 
 .rating_name {
   width: 50%;
@@ -168,9 +171,35 @@ img {
   overflow: hidden;
   transition: height 0.65s ease-in-out;
 }
+.abouttab{
+display: none;
+}
+.colorgreen{
+  background-color: #355E16;
+}
+.tablink {
+  /* background-color: #f0f0f0; */
+  background-color: white;
+  color: #355E16;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover:not(.selected) {
+  background-color: #c7c3c3;
+}
+
+.selected {
+  background-color: #ececec !important;
+}
 
 .show-results {
-  height: 295px !important;
+  height: 315px !important;
 }
 
 .text-success {
