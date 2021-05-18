@@ -159,7 +159,7 @@ const sendURL = async (url) => {
   error.classList.add("d-none");
 
   try {
-    const res = await axios.post("http://156.56.83.10:13692/scrape", [url]);
+    const res = await axios.post("http://socolab.luddy.indiana.edu:13693/scrape", [url]);
     colorStars({ ...res.data, total: avg(Object.values(res.data)) });
     results.classList.add("show-results");
     loading.classList.add("d-none");

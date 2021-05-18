@@ -107,7 +107,11 @@ button:focus {
   font-size: 20px;
 }
 .about-content{
-font-size: x-small;
+font-size: small;
+}
+hr.vertically {
+  width: 0;
+  height: 100%;
 }
 
 .rating_name {
