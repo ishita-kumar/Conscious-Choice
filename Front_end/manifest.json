@@ -1,13 +1,14 @@
 {
   "manifest_version": 2,
 
-  "name": "Amazon Ratings",
+  "name": "Conscious Choice",
 
   "description": "How sustainable is your Amazon product?",
-  "version": "1.1.9",
+  
+  "version": "1.0.0",
   "author": "Ishita Kumar",
     "icons": {
-      "128": "icon.png"
+      "128": "icon_128.png"
     },
 
    "page_action": {
@@ -30,9 +31,8 @@
   }
 ],
   "permissions": [
-    "tabs",
+    
     "activeTab",
-    "clipboardWrite" ,
     "storage"
   ]
 }

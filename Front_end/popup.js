@@ -15,38 +15,7 @@ chrome.tabs.query(
 );
 
 
-//Get Price
-
-var productDescription = () => {
-	if(document.getElementById('productDescription')){
-		
-		var section = document.getElementById('productDescription');
-		var descrp = section.getElementsByTagName('p')[0].innerText;
-		
-	return descrp; 
-} 
-else if (document.getElementById('unqualified')){
-	var section = document.getElementById('unqualified');
-	var availableFrom = section.getElementsByClassName('a-color-price')[0].innerText;
-	return availableFrom;
-
-} else if (document.getElementById('outOfStock')) {
-	return "Out Of Stock";
-
-} else if (document.getElementById('unqualifiedBuyBox')){
-	return "See Buying Options";
-
-} else if (document.getElementById('priceblock_saleprice')){
-	var price = document.getElementById('priceblock_saleprice').innerText;
-	
-	return price;
-} else
-  return 'N/A'
-
-}
-
 document.addEventListener("DOMContentLoaded", function () {
- console.log( productDescription())
 
   const home = document.getElementById("defaultOpen");
   const about = document.getElementById("about");
@@ -159,20 +128,22 @@ const sendURL = async (url) => {
   error.classList.add("d-none");
 
   try {
-    const res = await axios.post("http://socolab.luddy.indiana.edu:13693/scrape", [url]);
+    const res = await axios.post("https://socolab.luddy.indiana.edu/ConsciousChoice/scrape", [url]);
     colorStars({ ...res.data, total: avg(Object.values(res.data)) });
     results.classList.add("show-results");
     loading.classList.add("d-none");
   } catch (err) {
     error.classList.remove("d-none");
+    loading.classList.add("d-none");
     console.log(err);
   }
 };
 
+//  write code for /getrecommndations
+
 function insertData(data) {
   document.getElementById("title").innerHTML = data.title;
-  // document.getElementById('asin').innerHTML = prediction_vals;
-  // document.getElementById('ratings').innerHTML = "hi";
+
 }
 
 const newPost = {
@@ -180,19 +151,3 @@ const newPost = {
     "This puts us in a unique position to truly represent our diverse community of outdoor enthusiasts. We are committed to ensure diversity in all our ranks as we grow",
 };
 
-// const sendRequest = async () => {
-//     try {
-//         const resp = await axios.post('http://127.0.0.1:12345/prediction', newPost);
-//         console.log(resp.data);
-//     } catch (err) {
-//         // Handle Error Here
-//         console.error(err);
-//     }
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     var btn = document.getElementById('rating');
-//     btn.addEventListener('click', function() {
-//     sendRequest();
-
-//     });
-// });

@@ -1,41 +1,23 @@
-{
-    "manifest_version": 2,
-    "name": "Amazon Ratings",
-    "version": "2.0.1",
-    "description": "Gets you a rating for your web extension",
-    "author": "Ishita Kumar",
-    "icons": {
-      "128": "icon.png"
-    },
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
-    "content_scripts": [
-      {
-        "matches": [
-          "http://www.amazon.com/*",
-          "https://www.amazon.com/*",
-          "http://smile.amazon.com/*",
-          "https://smile.amazon.com/*",
-          "https://www.amazon.ca/*",
-          "https://www.amazon.co.uk/*",
-          "http://www.amazon.it/*",
-          "https://www.amazon.it/*",
-          "https://www.amazon.fr/*",
-          "https://www.amazon.es/*"
-        ],
-        "js": ["contentscript.js"],
-        "run_at": "document_idle",
-        "all_frames": false
-      }
-    ],
-    "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png",
-      "default_title": "Amazon ratings"
-    },
-  
-    "permissions": ["activeTab","alarms"]
-  }
-  
+Conscious Choice follows a simple process to higlight the ratings of your product. We check your product or brands details in real time and predict a score on the goodness of this product. We give you the ability to make smart and Conscious choices about the products that you buy on Amazon. Now with the push of a button, you can find out how conscious your product brand is on Amazon and make environment conscious decisions. 
+
+How to use Conscious Choice
+1.Install the chrome extension via this
+2.On your URL search bar, pin the Amazon Ratings extension so that it is now visible on the URL bar.
+3.Go to https://www.amazon.com/
+4.Do not do this on incognito mode for testing purposes
+5.Type in a product name on the search bar and go to the product page
+6.Important: Wait for the product to completely finish loading
+7.Click on the green Amazon rating extension Icon and wait for about a minute for the rating to compute. An external popup will open that scrapes the data. This is normal.
+
+
+https://ishita-kumar.github.io/Conscious-Choice/
+https://soco.luddy.indiana.edu/
+
+273000134
+
+Only active tab needed since the chrome extension will scrape off the active tabs content to provide real time scores
+
+
+Users can get Sustainability scores of products on Amazon
+
+Only active tab needed since the chrome extension will scrape off the active tabs content to provide real time scores

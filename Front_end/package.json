@@ -1,0 +1,17 @@
+{
+    "name": "front_end",
+    "version": "1.0.0",
+    "main": "main.js",
+    "dependencies": {
+      "assign-symbols": "1.0.0",
+      "axios": "0.21.1",
+      "braces": "2.3.2",
+      "chai": "4.3.4",
+      "growl": "1.10.5",
+      "htmlparser": "1.7.7",
+      "isarray": "1.0.0",
+      "lodash": "4.17.21",
+      "minimist": "1.2.5"
+    }
+  }
+  
