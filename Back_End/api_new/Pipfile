@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+joblib = "*"
+pandas = "*"
+numpy = "*"
+selenium = "*"
+bs4 = "*"
+sklearn = "*"
+schedule = "*"
+dnspython = "*"
+matplotlib = "*"
+scikit-learn = "*"
+msedge-selenium-tools = "*"
+requests = "*"
+beautifulsoup4 = "*"
+Flask = "*"
+Flask-PyMongo = "*"
+Flask-Cors = "*"
+scraper = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
